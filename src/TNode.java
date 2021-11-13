@@ -3,23 +3,23 @@ import java.util.HashMap;
 public class TNode {
 
     private HashMap<Character, TNode> children;
-    private Boolean endOfWord;
+    private Boolean isEndOfWord;
 
     public TNode() {
         children = new HashMap<>();
-        endOfWord = false;
+        isEndOfWord = false;
     }
 
     public HashMap<Character, TNode> getChildren() {
         return children;
     }
 
-    public void setEndOfWord(Boolean cond) {
-        endOfWord = cond;
+    public void setIsEndOfWord(Boolean cond) {
+        isEndOfWord = cond;
     }
 
-    public Boolean getEndOfWord() {
-        return endOfWord;
+    public Boolean getIsEndOfWord() {
+        return isEndOfWord;
     }
 
     @Override
